@@ -1,0 +1,9 @@
+ @use '../base/colors' as *;
+
+
+.text-block {
+    background-image: url("../assets/SVG/bg-darkgreen.svg");
+    background-size: 500%;
+    background-position: 65% 45%;
+    color: $secondary-color-5;
+}

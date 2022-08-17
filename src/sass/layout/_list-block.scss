@@ -1,0 +1,15 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.list-block {
+    &__item {
+        @include flex-row-start;
+        gap: $space-md;
+        margin-bottom: $space-sm;
+
+        .list-block__svg {
+            max-width: 5rem;
+        }
+    }
+}

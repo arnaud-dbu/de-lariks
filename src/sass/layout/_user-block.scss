@@ -1,0 +1,38 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.user-block {
+    background-image: url("../assets/SVG/bg-green.svg");
+    background-size: 400%;
+    background-position: 40% 40%;
+    color: $secondary-color-6;
+
+    @include flex-row;
+    gap: $space-md;
+    
+    &__avatar {
+        border-radius: 50%;
+        max-width: 5rem;
+    }
+
+    &__body {
+
+        @include flex-column;
+        .user-block__quote {
+            font-family: "Russo One";
+            color: $secondary-color-6;
+            font-size: 1.5rem;
+        }
+
+        .user-block__title {
+            font-size: 1rem;
+        }
+
+        address {
+            a {
+                color: $secondary-color-6;
+            }
+        }
+    }
+}

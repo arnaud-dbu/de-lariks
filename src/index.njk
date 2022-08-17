@@ -1,5 +1,113 @@
 ---
-layout: base.njk
-title: Hello World
+layout: layouts/base.njk
+title: De Lariks | Home
 ---
 
+{% include "partials/header.njk" %}
+
+{% include "partials/hero.njk" %}
+
+<div class="text-block p-md">
+    <h2 class="text-block__title subtitle subtitle--white">Wie kan er in de Lariks terecht?</h2>
+    <p class="text-block__description text">De Lariks is er voor personen die omwille van psychische problemen (nog) niet of
+        niet meer alleen kunnen wonen en nood hebben aan bijkomende ondersteuning zonder dat een permanente opname in
+        een psychiatrische voorziening aangewezen is.</p>
+    <p>Het verblijf kan een tijdelijk of permanent karakter hebben.</p>
+</div>
+
+<div class="user-block p-md">
+    <img class="user-block__avatar" src="../assets/img/profile.jpg" alt="">
+    <div class="user-block__body">
+        <span class="user-block__quote">‘Ik ben zelfstandiger en zelfzekerder geworden door de ondersteuning van De
+            Lariks’</span>
+        <span class="user-block__title">Maria, cliënt</span>
+    </div>
+</div>
+
+<div class="p-md bg-white">
+    <h2 class="subtitle">De begeleiding</h2>
+    <p>Door het bieden van de nodige ondersteuning op verschillende domeinen van het leven wordt er gestreefd naar het
+        behouden, verhogen of herstellen van de zelfstandigheid. De begeleiding heeft een coachende functie en bouwt
+        samen met de cliënt een ondersteunend netwerk uit. Ongeacht de woonvorm heeft elke cliënt een individuele
+        begeleider die naargelang de begeleidingsvraag meer of minder aanwezig kan zijn.</p>
+    <ul class="list-block">
+        <li class="list-block__item">
+            <img src="../assets/SVG/smile.svg" alt="smile" class="list-block__svg">
+            <div class="list-block__body">
+                <h3 class="list-block__title list-title">Psychische ondersteuning</h3>
+                <p class="list-block__text text">Het team verzekert een professionele begeleiding waarbij indien
+                    nodig een beroep wordt gedaan op externe diensten zoals een Centrum Geestelijke Gezondheidszorg
+                    (CGGZ), psycholoog of psychiater.</p>
+            </div>
+        </li>
+        <li class="list-block__item">
+            <img src="../assets/SVG/network.svg" alt="network" class="list-block__svg">
+            <div class="list-block__body">
+                <h3 class="list-block__title list-title">Sociale ondersteuning</h3>
+                <p class="list-block__text text">Er wordt in grote mate aandacht besteed aan het sociale netwerk
+                    van de cliënten. In dat kader ziet De Lariks een passende dagactiviteit als een verplicht gegeven.
+                    Deze dagactiviteit kan bestaan uit een betaalde job, vrijwilligerswerk, naar een dagcentrum gaan,
+                    een studie starten, etc.</p>
+            </div>
+        </li>
+        <li class="list-block__item">
+            <img src="../assets/SVG/finance.svg" alt="finance" class="list-block__svg">
+            <div class="list-block__body">
+                <h3 class="list-block__title list-title">Financiële ondersteuning</h3>
+                <p class="list-block__text text">Er kan hulp geboden worden bij het omgaan met geld en met het
+                    beschikbare budget. Een systeem budgetbeheer kan geïnstalleerd worden indien nodig.</p>
+            </div>
+        </li>
+        <li class="list-block__item">
+            <img src="../assets/SVG/clean.svg" alt="clean" class="list-block__svg">
+            <div class="list-block__body">
+                <h3 class="list-block__title list-title">Huishoudelijke ondersteuning</h3>
+                <p class="list-block__text text">Er wordt van de bewoner een zekere zelfstandigheid verwacht bij
+                    het uitvoeren van de huishoudelijke taken. Waar nodig wordt praktische hulp geboden.</p>
+            </div>
+        </li>
+        <li class="list-block__item">
+            <img src="../assets/SVG/administration.svg" alt="administration" class="list-block__svg">
+            <div class="list-block__body">
+                <h3 class="list-block__title list-title">Adminstratieve ondersteuning</h3>
+                <p class="list-block__text text">Waar nodig wordt ondersteuning geboden bij administratieve taken.
+                </p>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="text-block p-md">
+    <h2 class="text-block__title subtitle subtitle--white">De opname procedure</h2>
+    <p class="text-block__description text">Indien je denkt dat Beschut wonen iets voor jou kan zijn neem je best contact op
+        met de coördinator.</p>
+    <p class="text">Afhankelijk van de beschikbare plaatsen kan een eerste gesprek plaatsvinden. Op basis van dit gesprek aangevuld met een psychiatrisch verslag beslist het team over een eventueel tweede contact met de psychiater van De Lariks wordt beslist of een verblijf in de Lariks mogelijk is. Een opnamedatum wordt dan in onderling overleg vastgelegd.</p>
+</div>
+
+<div class="user-block p-md">
+    <img class="user-block__avatar" src="../assets/img/profile.jpg" alt="">
+    <div class="user-block__body">
+        <span class="user-block__name list-title">Anja Rooselaer</span>
+        <address>
+            <a href="mailto:anja.rooselaer@delariks.be">anja.rooselaer@delariks.be</a><br>
+            <a href="tel:+3225348341">02/534.83.41</a>
+        </address>
+    </div>
+</div>
+
+<div class="bg-white p-md">
+    <div class="pb-md">
+        <h2 class="subtitle">Gegevens</h2>
+        <address>
+            <span>Admininstratieve zetel:<br/>VZW Beschut Wonen<br/>De Lariks<br/>Jean Robiestraat 29<br/>1060 Sint-Gillis</span>
+        </address>
+    </div>
+    <div class="pb-md">
+        <h2 class="subtitle">Bereikbaarheid</h2>
+        <address>
+            <span>Treinstation: Brussel-Zuid<br/>Tram (18, 81, 82): Barrière<br/>Bus (48): Barrière<br/>Pré-metro (3, 4, 51) : Horta</span>
+        </address>
+    </div>
+    <iframe class="map pb-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2841333126867!2d4.340478816236223!3d50.82590077952896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c442cb39f70d%3A0x91e9c71fe1d79e1!2svzw%20Beschut%20Wonen%20De%20Lariks!5e0!3m2!1sen!2sbe!4v1660740584503!5m2!1sen!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="text--small">VZW Beschut Wonen De Lariks maakt deel uit van een samenwerkingsverband met CGG Brussel en Europaziekenhuizen Sint-Michielskliniek.</p>
+</div>
