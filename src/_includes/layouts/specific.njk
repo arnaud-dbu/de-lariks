@@ -1,0 +1,13 @@
+{% extends "layouts/base.njk" %}
+
+{% block body %}
+    {% include "partials/header.njk" %}
+
+    <h1 class="maintitle">{{mainTitle}}</h1>
+
+    {% block main %}
+    
+    {% endblock %}
+
+    {% include "partials/footer.njk" %}
+{% endblock %}

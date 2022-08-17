@@ -1,15 +1,17 @@
 ---
-layout: layouts/base.njk
-title: De Lariks | Home
+  pageTitle: De Lariks | Home
 ---
 
-{% include "partials/header.njk" %}
+{% extends "layouts/home.njk" %}
+
+{% block main %}
 
 {% include "partials/hero.njk" %}
 
 <div class="text-block p-md">
     <h2 class="text-block__title subtitle subtitle--white">Wie kan er in de Lariks terecht?</h2>
-    <p class="text-block__description text">De Lariks is er voor personen die omwille van psychische problemen (nog) niet of
+    <p class="text-block__description text">De Lariks is er voor personen die omwille van psychische problemen (nog)
+        niet of
         niet meer alleen kunnen wonen en nood hebben aan bijkomende ondersteuning zonder dat een permanente opname in
         een psychiatrische voorziening aangewezen is.</p>
     <p>Het verblijf kan een tijdelijk of permanent karakter hebben.</p>
@@ -79,9 +81,13 @@ title: De Lariks | Home
 
 <div class="text-block p-md">
     <h2 class="text-block__title subtitle subtitle--white">De opname procedure</h2>
-    <p class="text-block__description text">Indien je denkt dat Beschut wonen iets voor jou kan zijn neem je best contact op
+    <p class="text-block__description text">Indien je denkt dat Beschut wonen iets voor jou kan zijn neem je best
+        contact op
         met de coördinator.</p>
-    <p class="text">Afhankelijk van de beschikbare plaatsen kan een eerste gesprek plaatsvinden. Op basis van dit gesprek aangevuld met een psychiatrisch verslag beslist het team over een eventueel tweede contact met de psychiater van De Lariks wordt beslist of een verblijf in de Lariks mogelijk is. Een opnamedatum wordt dan in onderling overleg vastgelegd.</p>
+    <p class="text">Afhankelijk van de beschikbare plaatsen kan een eerste gesprek plaatsvinden. Op basis van dit
+        gesprek aangevuld met een psychiatrisch verslag beslist het team over een eventueel tweede contact met de
+        psychiater van De Lariks wordt beslist of een verblijf in de Lariks mogelijk is. Een opnamedatum wordt dan in
+        onderling overleg vastgelegd.</p>
 </div>
 
 <div class="user-block p-md">
@@ -99,15 +105,22 @@ title: De Lariks | Home
     <div class="pb-md">
         <h2 class="subtitle">Gegevens</h2>
         <address>
-            <span>Admininstratieve zetel:<br/>VZW Beschut Wonen<br/>De Lariks<br/>Jean Robiestraat 29<br/>1060 Sint-Gillis</span>
+            <span>Admininstratieve zetel:<br />VZW Beschut Wonen<br />De Lariks<br />Jean Robiestraat 29<br />1060
+                Sint-Gillis</span>
         </address>
     </div>
     <div class="pb-md">
         <h2 class="subtitle">Bereikbaarheid</h2>
         <address>
-            <span>Treinstation: Brussel-Zuid<br/>Tram (18, 81, 82): Barrière<br/>Bus (48): Barrière<br/>Pré-metro (3, 4, 51) : Horta</span>
+            <span>Treinstation: Brussel-Zuid<br />Tram (18, 81, 82): Barrière<br />Bus (48): Barrière<br />Pré-metro (3,
+                4, 51) : Horta</span>
         </address>
     </div>
-    <iframe class="map pb-md" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2841333126867!2d4.340478816236223!3d50.82590077952896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c442cb39f70d%3A0x91e9c71fe1d79e1!2svzw%20Beschut%20Wonen%20De%20Lariks!5e0!3m2!1sen!2sbe!4v1660740584503!5m2!1sen!2sbe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <p class="text--small">VZW Beschut Wonen De Lariks maakt deel uit van een samenwerkingsverband met CGG Brussel en Europaziekenhuizen Sint-Michielskliniek.</p>
+    <iframe class="map pb-md"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2841333126867!2d4.340478816236223!3d50.82590077952896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c442cb39f70d%3A0x91e9c71fe1d79e1!2svzw%20Beschut%20Wonen%20De%20Lariks!5e0!3m2!1sen!2sbe!4v1660740584503!5m2!1sen!2sbe"
+        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p class="text--small">VZW Beschut Wonen De Lariks maakt deel uit van een samenwerkingsverband met CGG Brussel en
+        Europaziekenhuizen Sint-Michielskliniek.</p>
 </div>
+{% endblock %}

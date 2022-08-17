@@ -1,0 +1,19 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.footer {
+    background-image: url("../assets/SVG/bg-darkblue.svg");
+    background-size: 600%;
+    background-position: 40% 40%;
+
+    &__logo {
+        max-width: 8rem;
+        opacity: 0.75;
+    }
+
+    &__nav li a {
+        color: $secondary-color-6;
+        text-decoration: none;
+    }
+}
