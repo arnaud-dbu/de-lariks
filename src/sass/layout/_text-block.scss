@@ -1,4 +1,5 @@
- @use '../base/colors' as *;
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
 
 
 .text-block {
@@ -6,4 +7,21 @@
     background-size: 500%;
     background-position: 65% 45%;
     color: $secondary-color-6;
+    
+    @include screen-md {        
+        background-size: 400%;
+        background-position: 65% 45%;
+    }
+
+    @include screen-lg {
+        padding: 3rem 0;
+    }
+
+    &__description {
+        max-width: min(100%, 55rem);
+
+        @include screen-md {
+        
+        }
+    }
 }

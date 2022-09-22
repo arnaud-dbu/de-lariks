@@ -1,0 +1,48 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+
+body {
+    font-family: "Titillium Web";
+    line-height: 1.5;
+    font-size: 1.1rem;
+    color: $secondary-color-1;
+    
+    @include screen-lg {
+        font-size: 1.3rem;
+    }
+
+    @include screen-xl {
+        font-size: 1.4rem;
+    }
+}
+
+// Overflow
+
+.overflow-hidden {
+  overflow-x: hidden;
+}
+
+.img-full-width {
+  width: 100%;
+}
+
+.img-border-radius {
+  border-radius: 50%;
+}
+
+.img-box-shadow {
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 10px #23222285;
+}
+
+// JS
+
+.hidden {
+  display: none;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

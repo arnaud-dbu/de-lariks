@@ -3,35 +3,63 @@
 @use '../utils/variables' as *;
 
 .user-block {
-    background-image: url("../assets/SVG/bg-green.svg");
+    background-color: $primary-color-1;
     background-size: 400%;
     background-position: 40% 40%;
     color: $secondary-color-6;
-
-    @include flex-row;
     gap: $space-md;
-    
-    &__avatar {
-        border-radius: 50%;
-        max-width: 5rem;
+
+    @include screen-lg {
+     padding: 3rem 0;
     }
+    
+    &__content {
+        @include flex-row;
+        gap: 1.5rem;
 
-    &__body {
-
-        @include flex-column;
-        .user-block__quote {
-            font-family: "Russo One";
-            color: $secondary-color-6;
-            font-size: 1.5rem;
+        @include screen-md {
+         gap: 2rem;
         }
 
-        .user-block__title {
-            font-size: 1rem;
-        }
 
-        address {
-            a {
+        .user-block__avatar {
+            border-radius: 50%;
+            max-width: 5rem;
+            
+            @include screen-md {
+                max-width: 7rem;
+            }
+        }
+    
+        .user-block__body {
+    
+            @include flex-column;
+            .user-block__quote {
+                font-family: "Russo One";
                 color: $secondary-color-6;
+                font-size: 1.5rem;
+
+                @include screen-md {
+                    font-size: 1.75rem;
+                }
+
+                @include screen-lg {
+                    font-size: 2rem;
+                }
+            }
+    
+            .user-block__title {
+                font-size: 1rem;
+
+                @include screen-md {
+                    font-size: 1.25rem;
+                }
+            }
+    
+            address {
+                a {
+                    color: $secondary-color-6;
+                }
             }
         }
     }
