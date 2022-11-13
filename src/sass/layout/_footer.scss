@@ -2,18 +2,39 @@
 @use '../utils/mixins' as *;
 @use '../utils/variables' as *;
 
+@use '../utils/variables' as *;
+
 .footer {
     background-image: url("../assets/SVG/bg-darkblue.svg");
-    background-size: 600%;
-    background-position: 40% 40%;
-
-    &__logo {
-        max-width: 8rem;
-        opacity: 0.75;
+    // background-color: $tertiary-color-1;
+    background-size: 500%;
+    background-position: 35% 45%;
+    
+    @include screen-md {
+        background-size: 350%;
+        background-position: 35% 45%;
+    }
+  
+    @include screen-lg {
+        background-size: 300%;
+        background-position: 25% 45%;
     }
 
-    &__nav li a {
-        color: $secondary-color-6;
-        text-decoration: none;
+    &__content {
+        .footer__logo {
+            max-width: 8rem;
+            opacity: 0.75;
+        }
+
+        .footer__nav li a {
+            color: $secondary-color-6;
+            text-decoration: none;
+        }
+
+        .footer__details {
+            display: flex;
+            font-size: 0.8rem;
+            flex-direction: column;
+        }
     }
 }

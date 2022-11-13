@@ -13,8 +13,8 @@
   }
 
   @include screen-lg {
-      background-size: 250%;
-      background-position: 35% 45%;
+      background-size: 200%;
+      background-position: 15% 45%;
   }
   
   &__content {
@@ -32,12 +32,12 @@
     .header__logo-dekstop {
       @include screen-md {
         width: 5rem;
-        padding: 1.5rem 0;
+        padding: 1rem 0;
         display: block;
     }
     
     @include screen-lg {
-          width: 7rem;
+          width: 6rem;
       }
     }
 
@@ -52,15 +52,11 @@
     .header__nav {
       @include screen-md {
         @include flex-row-center;
-        gap: 2rem;
+        gap: 3rem;
         font-weight: 300;
 
         @include screen-lg {
-            font-size: 1.3rem;
-        }
-
-        @include screen-xl {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     }
     

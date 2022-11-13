@@ -4,17 +4,19 @@
 
 .text-block {
     background-image: url("../assets/SVG/bg-darkgreen.svg");
-    background-size: 500%;
+    background-size: 600%;
     background-position: 65% 45%;
     color: $secondary-color-6;
+    padding: 2rem 0 2rem;
     
-    @include screen-md {        
-        background-size: 400%;
-        background-position: 65% 45%;
+    @include screen-lg {        
+        background-size: 300%;
     }
-
-    @include screen-lg {
+    
+    @include screen-xl {
         padding: 3rem 0;
+        background-size: 200%;
+        background-position: 65% 45%;
     }
 
     &__description {

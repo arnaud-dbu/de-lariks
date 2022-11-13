@@ -124,11 +124,11 @@
 }
 
 .wrapper {
-  max-width: calc(100vw - 2rem);
+  max-width: calc(100vw - 3rem);
   margin: 0 auto;
 
   @include screen-sm {
-    max-width: min(100vw - 4rem, 75rem);
+    max-width: min(100vw - 3rem, 75rem);
   }
 }
 

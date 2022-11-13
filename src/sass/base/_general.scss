@@ -10,10 +10,6 @@ body {
     @include screen-lg {
         font-size: 1.3rem;
     }
-
-    @include screen-xl {
-        font-size: 1.4rem;
-    }
 }
 
 // Overflow
