@@ -1,0 +1,25 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+.container {
+    &__block {
+        @include screen-md {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        .text {
+            @include screen-md {
+                width: 50%;
+            }
+        }
+        
+        img {
+            @include screen-md {
+                width: min(50%, 30rem);
+            }
+        }
+    }
+}

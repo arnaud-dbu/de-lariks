@@ -6,7 +6,7 @@ body {
     line-height: 1.5;
     font-size: 1.1rem;
     color: $secondary-color-1;
-    
+
     @include screen-lg {
         font-size: 1.3rem;
     }
@@ -15,30 +15,41 @@ body {
 // Overflow
 
 .overflow-hidden {
-  overflow-x: hidden;
-}
-
-.img-full-width {
-  width: 100%;
+    overflow-x: hidden;
 }
 
 .img-border-radius {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
-.img-box-shadow {
+.block {
+    display: block;
+}
+
+.container {
+    padding: 2rem 0;
+}
+
+.width-full {
+    width: 100%;
 }
 
 .text-shadow {
-  text-shadow: 1px 1px 10px #23222285;
+    text-shadow: 1px 1px 10px #23222285;
 }
 
 // JS
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .opacity-0 {
-  opacity: 0;
+    opacity: 0;
+}
+
+// Flex
+
+.-order-1 {
+    order: -1;
 }

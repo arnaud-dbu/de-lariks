@@ -3,11 +3,11 @@
 {% block body %}
     {% include "partials/header.njk" %}
 
-    <h1>{{mainTitle}}</h1>
+    <div class="bg-green">
+        <h1 class="title-1 wrapper">{{mainTitle}}</h1>
+    </div>
 
-    {% block main %}
-    
-    {% endblock %}
+    {% block main %}{% endblock %}
 
     {% include "partials/footer.njk" %}
 {% endblock %}

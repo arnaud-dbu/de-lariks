@@ -6,9 +6,20 @@ h1, h2 {
     font-family: "Russo One";
 }
 
-h1 {
-    background-color: $primary-color-1;
+.title-1 {
     color: $secondary-color-6;
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    
+    @include screen-md {
+        font-size: 1.6rem;
+    }
+
+    @include screen-lg {
+        font-size: 1.7rem;
+    }
 }
 
 .title-secondary {
@@ -29,12 +40,41 @@ h1 {
     color: $secondary-color-6;
 }
 
+.title-2 {
+    font-size: 1.3rem;
+    margin-bottom: $space-xs;
+    color: $secondary-color-1;
+    
+    @include screen-md {
+        font-size: 1.6rem;
+    }
+    
+    @include screen-lg {
+        font-size: 1.8rem;
+    }
+}
+
+.title-2--white {
+    color: $secondary-color-6;
+}
+
+.title-3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 0.25rem;
+}
+
 .list-title {
     font-weight: 600;
 }
 
 .text {
     margin-bottom: $space-sm;
+
+    em {
+        font-family: "Russo One";
+        color: $primary-color-1;
+    }
 }
 
 .text--sm {

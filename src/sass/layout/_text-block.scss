@@ -3,6 +3,19 @@
 
 
 .text-block {
+
+    &.text-block--list {
+        background-image: none;
+        background-color: $secondary-color-1;
+
+        
+        .text-block__content {
+            .text-block__description {
+                width: min(100%, 40rem);
+            }
+        }
+    }
+
     background-image: url("../assets/SVG/bg-darkgreen.svg");
     background-size: 600%;
     background-position: 65% 45%;
