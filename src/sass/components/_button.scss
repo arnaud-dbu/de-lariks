@@ -1,0 +1,19 @@
+@use '../base/colors' as *;
+@use '../utils/mixins' as *;
+@use '../utils/variables' as *;
+
+
+.btn-primary {
+    margin-top: .5rem;
+    background-color: $tertiary-color-1;
+    color: $secondary-color-6;
+    font-size: .9rem;
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: .3rem;
+    transition: background-color .1s ease;
+
+    &:hover  {
+        background-color: $tertiary-color-2;
+    }
+}

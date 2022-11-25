@@ -1,20 +1,33 @@
 @use '../utils/variables' as *;
 
-.link-primary {
-    font-size: 1.4rem;
-    font-family: "Russo one";
-    
-    a {
-        color: $secondary-color-1;
-        font-weight: 300;
-        text-decoration: underline;
+.links__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .link-primary {
+        font-size: 1.4rem;
+        font-family: "Russo one";
+        
+        a {
+            color: $secondary-color-1;
+            font-weight: 300;
+            text-decoration: underline;
+        }
+        
+        span {
+            font-size: 1rem;
+            font-family: "Titillium Web";
+            font-weight: 300;
+            display: block;
+            font-style: italic;
+        }
     }
-    
-    span {
-        font-size: 1rem;
-        font-family: "Titillium Web";
-        font-weight: 300;
-        display: block;
-        font-style: italic;
+
+}
+
+.link {
+    &:hover {
+        text-decoration: underline;
     }
 }

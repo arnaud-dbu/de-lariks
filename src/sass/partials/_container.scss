@@ -8,7 +8,7 @@
             display: flex;
             align-items: center;
             gap: 2rem;
-            margin-bottom: 2rem;
+            // margin-bottom: 2rem;
         }
         .text {
             @include screen-md {
@@ -19,6 +19,7 @@
         img {
             @include screen-md {
                 width: min(50%, 30rem);
+                box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
             }
         }
     }

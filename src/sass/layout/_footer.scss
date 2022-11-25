@@ -6,7 +6,6 @@
 
 .footer {
     background-image: url("../assets/SVG/bg-darkblue.svg");
-    // background-color: $tertiary-color-1;
     background-size: 500%;
     background-position: 35% 45%;
     
@@ -29,6 +28,10 @@
         .footer__nav li a {
             color: $secondary-color-6;
             text-decoration: none;
+
+            &:hover {
+                opacity: .7;
+            }
         }
 
         .footer__details {

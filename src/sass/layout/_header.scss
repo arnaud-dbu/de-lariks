@@ -69,6 +69,11 @@
     .header__link {
         a {
             color: $secondary-color-6;
+            transition: color .1s ease;
+
+            &:hover {
+                color: $primary-color-1;
+            }
         }
       }
     }
@@ -103,9 +108,13 @@
             font-size: 2rem;
             text-align: center;
 
-        
             a {
                 color: $secondary-color-1;
+                transition: color .1s ease;
+
+                &:hover {
+                    color: $primary-color-1;
+                }
             }
         }
     }
