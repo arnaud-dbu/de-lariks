@@ -1,0 +1,20 @@
+@use '../utils/variables' as *;
+
+.link-primary {
+    font-size: 1.4rem;
+    font-family: "Russo one";
+    
+    a {
+        color: $secondary-color-1;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+    
+    span {
+        font-size: 1rem;
+        font-family: "Titillium Web";
+        font-weight: 300;
+        display: block;
+        font-style: italic;
+    }
+}

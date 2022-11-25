@@ -24,7 +24,9 @@
 
         .user-block__avatar {
             border-radius: 50%;
-            max-width: 5rem;
+            width: 7rem;
+            height: 7rem;
+            object-fit: cover;
             
             @include screen-md {
                 max-width: 7rem;
@@ -39,12 +41,8 @@
                 color: $secondary-color-6;
                 font-size: 1.5rem;
 
-                @include screen-md {
-                    font-size: 1.75rem;
-                }
-
                 @include screen-lg {
-                    font-size: 2rem;
+                    font-size: 1.75rem;
                 }
             }
     

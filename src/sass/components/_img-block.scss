@@ -1,0 +1,27 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
+.img-block {
+    height: 17.5rem;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-position-y: 35%;
+    
+    @include screen-sm {
+        height: 22.5rem;
+
+    }
+    
+    @include screen-md {
+        height: 27.5rem;
+    }
+    
+    @include screen-lg {
+        height: 35rem;
+    }
+    
+    @include screen-xl {
+        height: 40rem;
+    }
+}

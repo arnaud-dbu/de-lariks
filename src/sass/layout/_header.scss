@@ -21,8 +21,13 @@
       @include flex-row-between;
 
     .header__logo-mobile {
-      max-width: 10rem;
-      padding: 0.5rem 0;
+        padding: 0.5rem 0;
+        width: 10rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
 
       @include screen-md {
         display: none;
@@ -43,6 +48,7 @@
 
     .header__hamburger {
       max-width: 1.5rem;
+      cursor: pointer;
 
       @include screen-md {
         display: none;
@@ -67,4 +73,43 @@
       }
     }
   }
+}
+
+.nav__mobile {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: -100vw;
+    top: 0;
+    background-color: $secondary-color-4;
+    z-index: 100;
+
+    .nav__close {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .nav__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+
+        .nav__link {
+            font-family: "Russo One";
+            font-size: 2rem;
+            text-align: center;
+
+        
+            a {
+                color: $secondary-color-1;
+            }
+        }
+    }
+
+
+
 }

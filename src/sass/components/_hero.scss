@@ -1,5 +1,55 @@
+@use '../utils/variables' as *;
+@use '../utils/mixins' as *;
+
 .hero {
-    width: 100%;
-    height: calc(100vh - 4rem);
-    background-color: grey;
+
+    @include screen-md {
+        display: flex;
+    }
+
+    &__img {
+        background-image: url('../../assets/img/SDIM2615_Lariks\ website.jpg');
+        height: 20rem;
+        background-size: cover;
+        background-position: center;
+
+        @include screen-md {
+            width: 50%;
+            height: 30rem;
+        }
+        
+        @include screen-xl {
+            height: 40rem;
+        }
+    }
+
+    .text-block {
+        background-color: $secondary-color-4;
+        background-image: none;
+        color: $tertiary-color-1;
+        padding: 1.5rem;
+        display: flex;
+        align-items: center;
+
+        @include screen-md {
+            width: 50%;
+        }
+
+        @include screen-lg {
+            padding: 2.5rem;
+        }
+
+        @include screen-xl {
+            padding: 3rem;
+        }
+
+        .text-block__content {
+            max-width: 40rem;
+
+            .text-block__title {
+                color: $secondary-color-1;
+            }
+        }
+
+    }
 }
