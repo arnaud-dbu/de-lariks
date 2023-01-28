@@ -10,12 +10,12 @@
         <div class="wrapper">
             <h2 class="title-2">Woonvormen</h2>
             <div class="container__block">
-                <p class="text">Binnen beschut wonen De Lariks bieden we verschillende woonvormen aan. We beschikken over <em>2 groepswoningen</em> die beide gelegen zijn in St-Gillis. Hier wonen respectievelijk 6 en 7 personen samen. Elke bewoner heeft een gemeubelde kamer. Andere ruimtes zoals de keuken, living en badkamer zijn gemeenschappelijk. Hier komt de begeleiding hier minstens 2 maal per week over de vloer.</p>
+                <p class="text">Binnen beschut wonen De Lariks bieden we verschillende woonvormen aan. We beschikken over <em>2 groepswoningen</em> die beide gelegen zijn in St-Gillis. Hier wonen respectievelijk 6 en 7 personen samen. Elke bewoner heeft een gemeubelde kamer. Andere ruimtes zoals de keuken, living en badkamer zijn gemeenschappelijk. Hier komt de begeleiding minstens 2 maal per week over de vloer.</p>
                 <img class="width-full" src="/assets/img/SDIM2532_Lariks website.jpg" alt="">
             </div>
             <div class="container__block">
                 <p class="text">In hartje Brussel begeleiden we 8 personen die in appartementen <em>per 2 of per 3 samenwonen</em>. Eén van deze appartementen is ook voorbehouden voor 3 mensen met het syndroom van Korsakov. De begeleiding is minstens 2 keer per week op de site aanwezig.</p>
-                <img class="width-full -order-1" src="/assets/img/SDIM2537_Lariks website.jpg" alt="">
+                <img class="width-full -order-1" src="/assets/img/SDIM2604_Lariks website.jpg" alt="">
             </div>
             <div class="container__block">
                 <p class="text">De overige cliënten wonen verspreid over het Brussels Hoofdstedelijk Gewest. Zij wonen <em>alleen in een studio of appartement</em> dat hen is toegewezen door een huisvestingsmaatschappij of door Sociaal Verhuur Kantoor Baita waarmee we een samenwerkingscontract hebben. Sommige cliënten zijn eigenaar van hun appartement. De begeleider komt 1 maal per week langs.</p>
@@ -25,8 +25,16 @@
     </section>
 
     {% include "partials/doelgroep.njk" %}
+
+    {% from "partials/quote.njk" import userBlock %}
+    {{ userBlock("Het is belangrijk dat je niet raar bent, en dat je mag zijn wie je bent", "Peter" , "peter.jpg") }}
+
+
     {% include "partials/quote.njk" %}
     {% include "partials/begeleiding-domeinen.njk" %}
+
+    {%- from "components/img-block.njk" import imgBlock -%}
+    {{ imgBlock("SDIM2581_Lariks website.jpg") }}
 
     {% set title = "De kosten" %}
     {% set description = "Het begeleidend personeel van De Lariks wordt vergoed via de ziekteverzekering van de betrokkene. Er wordt aan de bewoner geen bijdrage gevraagd voor de begeleidingskosten. Onkosten voor verblijf, verwarming, voeding, kleding, ontspanning, etc. worden door de bewoner betaald." %}

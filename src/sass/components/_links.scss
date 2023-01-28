@@ -28,6 +28,14 @@
 
 .link {
     &:hover {
-        text-decoration: underline;
+        border-bottom: 1px solid $secondary-color-2;
+        opacity: .75;
+    }
+    
+    &--primary {
+        transition: opacity .2s ease;
+        color: $secondary-color-1;
+        opacity: 1;
+        font-weight: 500;
     }
 }

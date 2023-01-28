@@ -1,9 +1,11 @@
-<section class="user-block pv-lg">
-    <div class="user-block__content wrapper">
-        <img class="user-block__avatar" src="/assets/img/quote.jpg" alt="">
-        <div class="user-block__body">
-            <span class="user-block__quote">‘In oktober 2001 ben ik met mijn valies in De Lariks toegekomen. De eerste weken was het een grote aanpassing. Nu is het mijn thuis’</span>
-            <span class="user-block__title">Peter, cliënt</span>
+{% macro userBlock(quote, name, img) %}
+    <section class="user-block pv-lg">
+        <div class="user-block__content wrapper">
+            <img class="user-block__avatar" src="/assets/img/{{ img }}" alt="">
+            <div class="user-block__body">
+                <span class="user-block__quote">‘{{ quote }}’</span>
+                <span class="user-block__title">{{ name }}, cliënt</span>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
+{% endmacro %}

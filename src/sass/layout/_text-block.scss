@@ -4,6 +4,25 @@
 
 .text-block {
 
+    &__column {
+
+        @include screen-md {
+            display: flex;
+            gap: 4rem;
+
+            img {
+                width: 20rem;
+                object-fit: contain;
+            }
+        }
+        
+        @include screen-lg {
+            img {
+                width: 30rem;
+            }
+        }
+    }
+
     &.text-block--list {
         background-image: none;
         background-color: $secondary-color-1;

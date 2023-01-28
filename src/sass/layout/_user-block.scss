@@ -2,6 +2,8 @@
 @use '../utils/mixins' as *;
 @use '../utils/variables' as *;
 
+
+
 .user-block {
     background-color: $primary-color-1;
     background-size: 400%;
@@ -12,6 +14,8 @@
     @include screen-lg {
      padding: 3rem 0;
     }
+
+
     
     &__content {
         @include flex-row;
