@@ -2,7 +2,7 @@
   "name": "de-lariks",
   "version": "1.4.0",
   "description": "",
-  "main": "index.html",
+  "main": "nl/index.html",
   "scripts": {
     "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
