@@ -2,53 +2,104 @@
 @use '../utils/mixins' as *;
 
 .hero {
+    position: relative;
 
     @include screen-md {
         display: flex;
     }
 
     &__img {
-        background-image: url('../../assets/img/SDIM2615_Lariks\ website.jpg');
-        height: 20rem;
+        background-image: url("../../assets/img/SDIM2615_Lariks website.jpg");
+        height: 40rem;
         background-size: cover;
-        background-position: center;
+        background-position-y: 62%;
+        background-position-x: 75%;
 
         @include screen-md {
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position-y: 72%;
+            background-size: cover;
+            background-position-x: 85%;
             width: 100%;
             height: 30rem;
         }
-        
-        @include screen-xl {
+
+        @include screen-lg {
             height: 40rem;
         }
     }
 
     .text-block {
-        background-color: $secondary-color-4;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background-color: #bbbe00e4;
         background-image: none;
-        color: $secondary-color-1;
+        color: $secondary-color-6;
         padding: 1.5rem;
         display: flex;
         align-items: center;
-
+        width: 18rem;
+        
         @include screen-md {
-            width: 50%;
+            translate: -5% -10%;
+            width: 40%;
+            justify-content: center;
+            padding: 2rem;
         }
 
         @include screen-lg {
-            padding: 2.5rem;
+            width: 35%;
+            height: 50%;
         }
-
+        
         @include screen-xl {
-            padding: 3rem;
+            width: 32.5%;
+            left: 70%;
+            top: 70%;
+            translate: -50% -50%;
         }
 
         .text-block__content {
             max-width: 40rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
 
-            .text-block__title {
-                color: $secondary-color-1;
+            img {
+                width: 15rem;
+
+                @include screen-md {
+                    width: 20rem;
+                }
+
+                @include screen-lg {
+                    width: 25rem;
+                }
+                
+                @include screen-xl {
+                    width: 30rem;
+                }
             }
+            
+            .text {
+                line-height: 1.2;
+                text-align: center;
+                font-size: 1.75rem;
+                
+                @include screen-lg {
+                    font-size: 2rem;
+                    padding: 0 2rem;
+                }
+
+                @include screen-xl {
+                    font-size: 2.25rem;
+                    padding: 0 2rem;
+                }
+            }
+
+
         }
 
     }

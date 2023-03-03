@@ -41,6 +41,10 @@
     color: $secondary-color-6;
     padding: 2rem 0 2rem;
     
+    &--blue {
+        background-image: url("../assets/SVG/bg-darkblue.svg");
+    }
+    
     @include screen-lg {        
         background-size: 300%;
     }

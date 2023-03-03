@@ -2,82 +2,102 @@
 @use "../utils/variables" as *;
 
 .header {
-  width: 100%;
-  background-size: 500%;
-  background-position: 50% 45%;
-  background-image: url(../assets/SVG/bg-darkgreen.svg);
-  
-  @include screen-md {
-      background-size: 350%;
-      background-position: 45% 45%;
-  }
+    width: 100%;
+    background-size: 500%;
+    background-position: 50% 45%;
+    background-image: url(../assets/SVG/bg-darkgreen.svg);
 
-  @include screen-lg {
-      background-size: 200%;
-      background-position: 15% 45%;
-  }
-  
-  &__content {
-      @include flex-row-between;
-
-    .header__logo-mobile {
-        padding: 0.5rem 0;
-        width: 10rem;
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    
-
-      @include screen-md {
-        display: none;
-      }
+    @include screen-md {
+        background-size: 350%;
+        background-position: 45% 45%;
     }
 
-    .header__logo-dekstop {
-      @include screen-md {
-        width: 5rem;
-        padding: 1rem 0;
-        display: block;
-    }
-    
     @include screen-lg {
-          width: 6rem;
-      }
+        background-size: 200%;
+        background-position: 15% 45%;
     }
 
-    .header__hamburger {
-      max-width: 1.5rem;
-      cursor: pointer;
+    &__content {
+        @include flex-row-between;
 
-      @include screen-md {
-        display: none;
-      }
-    }
+        .header__logo-mobile {
+            padding: 0.5rem 0;
+            width: 10rem;
 
-    .header__nav {
-      @include screen-md {
-        @include flex-row-center;
-        gap: 3rem;
-        font-weight: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-        @include screen-lg {
-            font-size: 1.2rem;
-        }
-    }
-    
-    .header__link {
-        a {
-            color: $secondary-color-6;
-            transition: color .1s ease;
 
-            &:hover {
-                color: $primary-color-1;
+            @include screen-md {
+                display: none;
             }
         }
-      }
+
+        .header__logo-dekstop {
+            scale: 1.2;
+
+            @include screen-md {
+                width: 5rem;
+                padding: 1rem 0;
+                display: block;
+            }
+
+            @include screen-lg {
+                width: 6rem;
+                aspect-ratio: 1/1;
+
+            }
+        }
+
+        .header__hamburger {
+            max-width: 1.5rem;
+            cursor: pointer;
+
+            @include screen-md {
+                display: none;
+            }
+        }
+
+        .header__nav {
+            @include screen-md {
+                @include flex-row-center;
+                gap: 2.5rem;
+                font-weight: 300;
+
+                @include screen-lg {
+                    font-size: 1.2rem;
+                }
+            }
+
+            .header__link {
+                a {
+                    color: $secondary-color-6;
+                    transition: color .1s ease;
+
+                    &:hover {
+                        color: $primary-color-1;
+                    }
+                }
+
+                &--highlighted {
+                    font-size: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border: 2px solid $primary-color-1;
+                    width: 2rem;
+                    aspect-ratio: 5/3;
+                    border-radius: .5rem;
+                    
+                    a {
+                        font-weight: 800;
+                        color: $primary-color-3 !important;
+                    }
+                }
+            }
+        }
     }
-  }
 }
 
 .nav__mobile {

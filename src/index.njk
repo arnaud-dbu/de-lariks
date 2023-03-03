@@ -5,11 +5,15 @@
 {% extends "layouts/home.njk" %}
 
 {% block main %}
-
+{# 
     {% include "partials/hero.njk" %}
 
     {%- from "partials/quote.njk" import userBlock -%}
-    {{ userBlock("In oktober 2001 ben ik met mijn valies in De Lariks toegekomen. De eerste weken was het een grote aanpassing. Nu is het mijn thuis", "Maria", "maria.jpg") }}
+    {{ userBlock(
+        "In oktober 2001 ben ik met mijn valies in De Lariks toegekomen. De eerste weken was het een grote aanpassing. Nu is het mijn thuis", 
+        "Maria", 
+        "maria.jpg") 
+    }}
 
     {% include "partials/begeleiding-domeinen.njk" %}
 
@@ -44,5 +48,5 @@
         </div>
         <p class="text--sm text--italic wrapper">VZW Beschut Wonen De Lariks maakt deel uit van een samenwerkingsverband met CGG Brussel en
                 Europaziekenhuizen Sint-Michielskliniek.</p>
-    </section>
+    </section> #}
 {% endblock %}

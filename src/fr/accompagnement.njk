@@ -1,0 +1,49 @@
+---
+  pageTitle: Accompagnement | De Lariks
+  mainTitle: Accompagnement
+---
+
+{% extends "layouts/fr/specific.njk" %}
+
+{% block main %}
+    <section class="container bg-white">
+        <div class="wrapper">
+            <h2 class="title-2">Formes de logement</h2>
+            <div class="container__block">
+                <p class="text">Au sein de l’habitation protégée De Lariks, nous proposons différentes formes de logement. Nous avons <em>deux maisons communautaires</em> situées à St-Gillis. Ici, 6 et 7 personnes vivent ensemble. Chaque résident dispose d'une chambre meublée. Les autres espaces tels que la cuisine, le salon et la salle de bain sont partagés. Ici, les accompagnateurs passent au moins deux fois par semaine.</p>
+                <img class="width-full" src="/assets/img/SDIM2532_Lariks website.jpg" alt="">
+            </div>
+            <div class="container__block">
+                <p class="text">Au cœur de Bruxelles, nous accompagnons 8 personnes qui vivent dans des appartements <em>par paires ou groupes de 3</em>. Un de ces appartements est également réservé à 3 personnes atteintes du syndrome de Korsakov. L’accompagnateur est sur place au moins deux fois par semaine.</p>
+                <img class="width-full -order-1" src="/assets/img/SDIM2604_Lariks website.jpg" alt="">
+            </div>
+            <div class="container__block">
+                <p class="text">Les autres clients vivent dispersés dans la région de Bruxelles-Capitale. Ils vivent <em>seuls dans un studio ou un appartement qui leur a été attribué</em> par une Société Immobilière de Service Public ou par l’Agence Immobilier Sociale Baita avec laquelle nous avons un contrat de collaboration. Certains clients sont propriétaires de leur appartement. L’assistent social leur rend visite une fois par semaine.</p>
+                <img class="width-full" src="/assets/img/SDIM2538_Lariks website.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/fr/doelgroep.njk" %}
+
+    <section class="user-block pv-lg">
+        <div class="user-block__content wrapper">
+            <img class="user-block__avatar" src="/assets/img/peter.jpg" alt="">
+            <div class="user-block__body">
+                <span class="user-block__quote">‘C'est important de ne pas être bizarre, <br>et d'avoir le droit d'être qui on est.’</span>
+                <span class="user-block__title">Peter, cliënt</span>
+            </div>
+        </div>
+    </section>
+
+    {% include "partials/fr/begeleiding-domeinen.njk" %}
+
+
+    {% set title = "Les coûts" %}
+    {% set description = "Les assistents sociales sont  financés par l’assurance maladie des résidents. Aucune contribution n'est demandée au résident pour les frais d’accompagnement. Les frais de logement, chauffage, nourriture, vêtements, loisirs, etc. sont à charge des résidents." %}
+    {% include "components/text-block.njk" %}
+
+    {% set image = "SDIM2581_Lariks website.jpg" %}
+    {% include "components/img-block.njk" %}
+
+{% endblock %}

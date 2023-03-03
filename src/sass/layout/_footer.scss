@@ -21,6 +21,9 @@
 
     &__content {
         .footer__logo {
+            scale: 1.1;
+            position: relative;
+            right: 1rem;
             max-width: 8rem;
             opacity: 0.75;
         }

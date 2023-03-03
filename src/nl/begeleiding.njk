@@ -24,22 +24,21 @@
         </div>
     </section>
 
-    {% include "partials/doelgroep.njk" %}
+    {% include "partials/nl/doelgroep.njk" %}
 
-    {% from "partials/quote.njk" import userBlock %}
-    {{ userBlock("Het is belangrijk dat je niet raar bent, en dat je mag zijn wie je bent", "Peter" , "peter.jpg") }}
+    {% set image = "peter.jpg" %}
+    {% set name = "Peter" %}
+    {% set quote = "Het is belangrijk dat je niet raar bent, en dat je mag zijn wie je bent" %}
+    {% include "components/quote.njk" %}
 
+    {% include "partials/nl/begeleiding-domeinen.njk" %}
 
-    {% include "partials/quote.njk" %}
-    {% include "partials/begeleiding-domeinen.njk" %}
-
-    {%- from "components/img-block.njk" import imgBlock -%}
-    {{ imgBlock("SDIM2581_Lariks website.jpg") }}
+    {% set size = "center" %}
+    {% set image = "SDIM2581_Lariks website.jpg" %}
+    {% include "components/img-block.njk" %}
 
     {% set title = "De kosten" %}
     {% set description = "Het begeleidend personeel van De Lariks wordt vergoed via de ziekteverzekering van de betrokkene. Er wordt aan de bewoner geen bijdrage gevraagd voor de begeleidingskosten. Onkosten voor verblijf, verwarming, voeding, kleding, ontspanning, etc. worden door de bewoner betaald." %}
     {% include "components/text-block.njk" %}
-
-
 
 {% endblock %}

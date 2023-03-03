@@ -1,0 +1,36 @@
+---
+  pageTitle: De Lariks | Home
+---
+
+{% extends "layouts/fr/home.njk" %}
+over ons
+{% block main %}
+
+    {% include "partials/fr/hero.njk" %}
+
+    {% include "partials/fr/doelgroep.njk" %}
+
+
+    <section class="user-block pv-lg">
+        <div class="user-block__content wrapper">
+            <img class="user-block__avatar" src="/assets/img/maria.jpg" alt="">
+            <div class="user-block__body">
+                <span class="user-block__quote">‘En octobre 2001, je suis arrivé à De Lariks qu’avec ma valise. Les premières semaines, j'ai dû m'adapter. Maintenant, c'est chez moi’</span>
+                <span class="user-block__title">Maria, résidente</span>
+            </div>
+        </div>
+    </section>
+
+
+
+    {% set image = "SDIM2526_Lariks\ website.jpg" %}
+    {% include "components/img-block.njk" %}
+
+
+
+    {% include "partials/fr/opname.njk" %}
+    {% include "partials/fr/contact-gegevens.njk" %}
+    {% include "partials/fr/locatie.njk" %}
+
+
+{% endblock %}

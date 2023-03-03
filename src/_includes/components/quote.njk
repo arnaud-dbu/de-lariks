@@ -1,11 +1,9 @@
-{% macro userBlock(quote, name, img) %}
     <section class="user-block pv-lg">
         <div class="user-block__content wrapper">
-            <img class="user-block__avatar" src="/assets/img/{{ img }}" alt="">
+            <img class="user-block__avatar" src="/assets/img/{{ image }}" alt="">
             <div class="user-block__body">
                 <span class="user-block__quote">‘{{ quote }}’</span>
                 <span class="user-block__title">{{ name }}, cliënt</span>
             </div>
         </div>
     </section>
-{% endmacro %}
