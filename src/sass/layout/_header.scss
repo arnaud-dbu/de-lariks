@@ -2,143 +2,154 @@
 @use "../utils/variables" as *;
 
 .header {
-    width: 100%;
-    background-size: 500%;
-    background-position: 50% 45%;
-    background-image: url(../assets/SVG/bg-darkgreen.svg);
+  width: 100%;
+  background-size: 500%;
+  background-position: 50% 45%;
+  background-image: url(../assets/SVG/bg-darkgreen.svg);
 
-    @include screen-md {
-        background-size: 350%;
-        background-position: 45% 45%;
+  @include screen-md {
+    background-size: 350%;
+    background-position: 45% 45%;
+  }
+
+  @include screen-lg {
+    background-size: 200%;
+    background-position: 15% 45%;
+  }
+
+  &__content {
+    @include flex-row-between;
+
+    .header__logo-mobile {
+      padding: 0.5rem 0;
+      width: 10rem;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include screen-md {
+        display: none;
+      }
     }
 
-    @include screen-lg {
-        background-size: 200%;
-        background-position: 15% 45%;
+    .header__logo-dekstop {
+      scale: 1.2;
+
+      @include screen-md {
+        width: 5rem;
+        padding: 1rem 0;
+        display: block;
+      }
+
+      @include screen-lg {
+        width: 6rem;
+        aspect-ratio: 1/1;
+      }
     }
 
-    &__content {
-        @include flex-row-between;
+    .header__hamburger {
+      max-width: 1.5rem;
+      cursor: pointer;
 
-        .header__logo-mobile {
-            padding: 0.5rem 0;
-            width: 10rem;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-
-            @include screen-md {
-                display: none;
-            }
-        }
-
-        .header__logo-dekstop {
-            scale: 1.2;
-
-            @include screen-md {
-                width: 5rem;
-                padding: 1rem 0;
-                display: block;
-            }
-
-            @include screen-lg {
-                width: 6rem;
-                aspect-ratio: 1/1;
-
-            }
-        }
-
-        .header__hamburger {
-            max-width: 1.5rem;
-            cursor: pointer;
-
-            @include screen-md {
-                display: none;
-            }
-        }
-
-        .header__nav {
-            @include screen-md {
-                @include flex-row-center;
-                gap: 2.5rem;
-                font-weight: 300;
-
-                @include screen-lg {
-                    font-size: 1.2rem;
-                }
-            }
-
-            .header__link {
-                a {
-                    color: $secondary-color-6;
-                    transition: color .1s ease;
-
-                    &:hover {
-                        color: $primary-color-1;
-                    }
-                }
-
-                &--highlighted {
-                    font-size: 1rem;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border: 2px solid $primary-color-1;
-                    width: 2rem;
-                    aspect-ratio: 5/3;
-                    border-radius: .5rem;
-                    
-                    a {
-                        font-weight: 800;
-                        color: $primary-color-3 !important;
-                    }
-                }
-            }
-        }
+      @include screen-md {
+        display: none;
+      }
     }
+
+    .header__nav {
+      @include screen-md {
+        @include flex-row-center;
+        gap: 2.5rem;
+        font-weight: 300;
+
+        @include screen-lg {
+          font-size: 1.2rem;
+        }
+      }
+
+      .header__link {
+        a {
+          color: $secondary-color-6;
+          transition: color 0.1s ease;
+
+          &:hover {
+            color: $primary-color-1;
+          }
+        }
+
+        &--highlighted {
+          font-size: 1rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid $primary-color-1;
+          width: 2rem;
+          aspect-ratio: 5/3;
+          border-radius: 0.5rem;
+
+          a {
+            font-weight: 800;
+            color: $primary-color-3 !important;
+          }
+        }
+      }
+    }
+  }
 }
 
 .nav__mobile {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    left: -100vw;
-    top: 0;
-    background-color: $secondary-color-4;
-    z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  left: -100vw;
+  top: 0;
+  background-color: $secondary-color-4;
+  z-index: 100;
 
-    .nav__close {
-        position: absolute;
-        right: 1rem;
-        top: 1rem;
-        z-index: 1;
-        cursor: pointer;
-    }
+  .nav__close {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 1;
+    cursor: pointer;
+  }
 
-    .nav__content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        translate: -50% -50%;
+  .nav__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-        .nav__link {
-            font-family: "Russo One";
-            font-size: 2rem;
-            text-align: center;
+    .nav__link {
+      font-family: "Russo One";
+      font-size: 2rem;
+      text-align: center;
 
-            a {
-                color: $secondary-color-1;
-                transition: color .1s ease;
+      a {
+        color: $secondary-color-1;
+        transition: color 0.1s ease;
+        white-space: nowrap;
 
-                &:hover {
-                    color: $primary-color-1;
-                }
-            }
+        &:hover {
+          color: $primary-color-1;
         }
+      }
+
+      &--highlighted {
+        margin-top: 1rem;
+        font-size: 1rem;
+        border: 2px solid $primary-color-1;
+        padding: 0 1rem;
+
+        a {
+          font-weight: 800;
+          color: $primary-color-1 !important;
+        }
+      }
     }
-
-
-
+  }
 }
