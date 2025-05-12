@@ -3,3 +3,8 @@
   to = "https://delariks.be"
   status = 200
   force = true
+
+  from = "/"
+  to = "https://delariks.be"
+  status = 301
+  force = false
